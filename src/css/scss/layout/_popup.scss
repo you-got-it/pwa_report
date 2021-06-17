@@ -1,0 +1,38 @@
+.popup {
+    background: $cBlue;
+    position: relative;
+    max-width: 345px;
+    @include tablet {
+        max-width: 380px;
+    }
+
+    &_close {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        background: url(#{$img}/close.svg) no-repeat center center;
+        height: 25px;
+        width: 25px;
+        padding: 0;
+    }
+    &_title {
+        font-size: 90px;
+        margin: 0 0 6px;
+    }
+    &_content {
+        padding: 65px 44px 60px;
+    }
+    &_footer {
+        background-color: rgba($cDark, .2);
+        padding: 0 22px;
+        min-height: 84px;
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+
+        img {
+            margin: -7px 5px 0;
+            vertical-align: middle;
+        }
+    }
+}
