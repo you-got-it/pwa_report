@@ -5,10 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#151515">
     <link rel="stylesheet" href="style.css">
-    <!--
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#2A60FE"/>
 
-        <link rel="manifest" href="manifest.json">
-    -->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+
     <title>Yoyo</title>
 </head>
 <body class="content-hidden">
@@ -55,8 +68,7 @@
             <article class="article" data-article="1">
                 <header class="article_header">
                     <h1 class="article_title">
-                        The quick read
-                        <span class="article_number">01</span>
+                        The quick read&nbsp;<span class="article_number">01</span>
                     </h1>
                     <div class="article_header-info">
                         <span class="article_duration">1 - 2 min read</span>
@@ -88,8 +100,7 @@
             <article class="article" data-article="2">
                 <header class="article_header">
                     <h1 class="article_title">
-                        Experiences with impact
-                        <span class="article_number">02</span>
+                        Experiences with impact&nbsp;<span class="article_number">02</span>
                     </h1>
                     <div class="article_header-info">
                         <span class="article_duration">2 - 3 min read</span>
@@ -149,8 +160,7 @@
             <article class="article" data-article="3">
                 <header class="article_header">
                     <h1 class="article_title">
-                        The Science
-                        <span class="article_number">03</span>
+                        The Science&nbsp;<span class="article_number">03</span>
                     </h1>
                     <div class="article_header-info">
                         <span class="article_duration">2 - 3 min read</span>
@@ -196,8 +206,7 @@
             <article class="article" data-article="4">
                 <header class="article_header">
                     <h1 class="article_title">
-                        Impact the bottom line
-                        <span class="article_number">04</span>
+                        Impact the bottom line&nbsp;<span class="article_number">04</span>
                     </h1>
                     <div class="article_header-info">
                         <span class="article_duration">2 - 3 min read</span>
@@ -255,8 +264,7 @@
             <article class="article" data-article="5">
                 <header class="article_header">
                     <h1 class="article_title">
-                        Building an experience
-                        <span class="article_number">05</span>
+                        Building an experience&nbsp;<span class="article_number">05</span>
                     </h1>
                     <div class="article_header-info">
                         <span class="article_duration">3 - 4 min read</span>
@@ -324,8 +332,7 @@
             <article class="article" data-article="6">
                 <header class="article_header">
                     <h1 class="article_title">
-                        Things to look out for
-                        <span class="article_number">06</span>
+                        Things to look out for&nbsp;<span class="article_number">06</span>
                     </h1>
                     <div class="article_header-info">
                         <span class="article_duration">2 - 3 min read</span>
@@ -372,8 +379,7 @@
             <article class="article" data-article="7">
                 <header class="article_header">
                     <h1 class="article_title">
-                        Ready to create?
-                        <span class="article_number">07</span>
+                        Ready to create?&nbsp;<span class="article_number">07</span>
                     </h1>
                     <div class="article_header-info">
                         <span class="article_duration">3 - 4 min read</span>
@@ -475,12 +481,12 @@
     </div>
 
     <script>
-        //self.addEventListener("load", async () => {
-        //    const container = navigator.serviceWorker;
-        //    if (container.controller === null) {
-        //        const reg = await container.register("./sw.js");
-        //    }
-        //});
+        self.addEventListener("load", async () => {
+            const container = navigator.serviceWorker;
+            if (container.controller === null) {
+                const reg = await container.register("./sw.js");
+            }
+        });
     </script>
     <script src="src/js/main.js"></script>
 </body>
