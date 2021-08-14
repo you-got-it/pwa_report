@@ -97,7 +97,7 @@
         display: none;
         @include tablet {
             display: block;
-            max-width: 240px;
+            width: 240px;
             flex-shrink: 0;
             transition: .3s $easing opacity;
             font-size: 16px;
