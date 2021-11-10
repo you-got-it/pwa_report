@@ -1,7 +1,6 @@
 
 .intro {
     --text-width: 300px;
-    //display: none !important;
 
     position: fixed;
     background: $cDark;
@@ -21,7 +20,11 @@
     }
 
     .intro-playing & {
+        display: flex;
         pointer-events: all;
+    }
+    .intro-played & {
+        display: none;
     }
 
     &_text {

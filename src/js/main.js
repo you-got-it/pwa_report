@@ -7,6 +7,7 @@ setTimeout(() => {
 }, 300);
 setTimeout(() => {
     document.body.classList.remove(showIntroClassName);
+    document.body.classList.add('intro-played');
     document.body.classList.remove('content-hidden');
 }, 3500);
 

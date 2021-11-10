@@ -40,6 +40,11 @@
     &_progress-text {
         margin: 0 0 0 30px;
     }
+    &_link {
+        @include desktop {
+            display: none;
+        }
+    }
 }
 
 @keyframes collapsing {
