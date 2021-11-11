@@ -18,5 +18,8 @@
         z-index: 10;
         opacity: 1;
         pointer-events: all;
+        @include desktop {
+            display: none;
+        }
     }
 }
