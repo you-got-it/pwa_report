@@ -10,12 +10,16 @@
     align-items: center;
     justify-content: center;
     padding: 20px;
+    z-index: -1;
     pointer-events: none;
-    z-index: 10;
     transition: .2s $easing opacity;
 
     .popup-opened & {
+        z-index: 10;
         opacity: 1;
         pointer-events: all;
+        @include desktop {
+            display: none;
+        }
     }
 }
