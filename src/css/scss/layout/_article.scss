@@ -110,6 +110,10 @@
         .opened & {
             opacity: 0;
         }
+
+        p {
+            margin: 0;
+        }
     }
     &_title {
         display: inline-block;
