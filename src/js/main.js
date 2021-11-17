@@ -55,6 +55,8 @@ function setOpenedArticle(e) {
 }
 
 function openArticle() {
+    sendEvent("article", "open", "article " + openedArticle);
+
     document.body.classList.remove('article-opened');
     document.body.classList.add('article-opening');
     articleElements.forEach(el => el.classList.remove('opened'));
@@ -90,6 +92,8 @@ function nextArticle(e) {
         e.stopPropagation();
         openedArticle++;
     }
+
+    sendEvent("article", "next", "article " + openedArticle);
 
     const openedTarget = document.querySelector(`.article.opened`);
     openedTarget.classList.add('closing');
@@ -132,6 +136,8 @@ nextPageElements.forEach(el => el.addEventListener('click', nextArticle));
 const closeArticleElement = document.querySelector('.js-close-article');
 closeArticleElement.addEventListener('click', function closeArticle(e) {
     e.preventDefault();
+
+    sendEvent("article", "close", "article " + openedArticle);
 
     if (document.body.classList.contains('article-opened')) {
         document.body.classList.add('article-closing');
