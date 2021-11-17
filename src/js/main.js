@@ -1,3 +1,27 @@
+/**
+ * Sends a tracking event to Google Analytics.
+ * 
+ * @param {string} category - Event category
+ * @param {string} action - Event action
+ * @param {string} label [undefined] - Event label (optional)
+ * @param {number} value [undefined] - Event value (optional)
+ */
+function sendEvent(category, action, label = undefined, value = undefined) {
+    if (!gtag) {
+        console.warn("`sendEvent` couldn't find `gtag`.");
+        return;
+    }
+
+    const eventObject = {
+        event_category: category,
+        event_label: label,
+        value: value
+    };
+
+    gtag("event", action, eventObject);
+    console.log("sendEvent", action, eventObject);
+}
+
 const root = document.documentElement;
 
 /* show intro */
