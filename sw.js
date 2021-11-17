@@ -24,6 +24,12 @@ self.addEventListener('activate', e => {
 
 self.addEventListener('fetch', event => {
     const { request } = event;
+
+    // Don't attempt to handle Google Analytics requests.
+    if (request.url.search("google-analytics.com") !== -1) {
+        return;
+    }
+
     event.respondWith(cacheData(request));
 });
 
