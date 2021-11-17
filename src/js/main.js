@@ -182,7 +182,7 @@ function saveOpenedArticle() {
 }
 
 function showProgress() {
-    const openedArticles = localStorage.openedArticles.split(',');
+    const openedArticles = localStorage.openedArticles ? localStorage.openedArticles.split(',') : [];
     const openedArticlesCount = openedArticles.length;
     const percent = Math.round((openedArticlesCount / articlesCount) * 100);
     const CIRCLE_WIDTH = 477;
