@@ -19,7 +19,6 @@ function sendEvent(category, action, label = undefined, value = undefined) {
     };
 
     gtag("event", action, eventObject);
-    console.log("sendEvent", action, eventObject);
 }
 
 const root = document.documentElement;
