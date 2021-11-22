@@ -61,7 +61,7 @@ ul {
 
 .popup-opened {
     overflow: hidden;
-    @include desktop {
+    @include media(500px) {
         overflow: auto;
     }
 }
